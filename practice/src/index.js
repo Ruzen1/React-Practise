@@ -3,19 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 function formatName(user){
-    return user.firstname + '' + user.lastName;
+    return user.firstname + ' ' + user.lastname;
 }
 
 const user = {
     firstname:'Harper',
-    lastname:'Perez'
+    lastname:'Perez',
 };
 
-const element = (
-    <h1>
-        Hello,{formatName(user)}!
-    </h1>
-);
+const element = <div tabIndex ="1">
+    <h1>Hello!</h1>
+    <h2>Good to see you here</h2>
+</div>;
 
 ReactDOM.render(
     element,
